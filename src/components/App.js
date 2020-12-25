@@ -8,7 +8,7 @@ export default () => {
   const [name, setName] = useState('');
   console.log({ name });
   
-  if (confg.sinInEAnabled && name === '') {
+  if (config.sinInEAnabled && name === '') {
     return <SignIn setName={setName} />; 
   } else {
     return <Main name={name} />; 
